@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Lucas Store</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+      }
+
+      nav {
+        background-color: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+      }
+
+      .nav-links a:hover {
+        text-decoration: underline;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 60px;
+        color: #333;
+      }
+
+      .categorias {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .categoria {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        width: 150px;
+        text-align: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/869/869636.png"
+          alt="Logo"
+        />
+        <span><strong>El artesano e-commerse</strong></span>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Cerrar sesión</a>
+      </div>
+    </nav>
+
+    <h1>Bienvenidos a Lucas Store</h1>
+
+    <div class="categorias">
+      <div class="panes con manteca">Ropa</div>
+      <div class="panes con grasa">Accesorios</div>
+      <div class="panes con lacteos">Electrónica</div>
+    </div>
+  </body>
+</html>
