@@ -3,90 +3,220 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda Lucas Store</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #fafafa;
-      }
-
-      nav {
-        background-color: #333;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px;
-      }
-
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .logo img {
-        width: 40px;
-        height: 40px;
-      }
-
-      .nav-links a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-        font-weight: bold;
-      }
-
-      .nav-links a:hover {
-        text-decoration: underline;
-      }
-
-      h1 {
-        text-align: center;
-        margin-top: 60px;
-        color: #333;
-      }
-
-      .categorias {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 40px;
-      }
-
-      .categoria {
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 20px;
-        width: 150px;
-        text-align: center;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-      }
-    </style>
+    <title>El Artesano - Panadería Artesanal</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navegación -->
     <nav>
       <div class="logo">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/869/869636.png"
-          alt="Logo"
+          src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png"
+          alt="Logo El Artesano"
         />
-        <span><strong>El artesano e-commerse</strong></span>
+        <span><strong>El Artesano</strong></span>
       </div>
       <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Cerrar sesión</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" class="btn-carrito">🛒 Carrito (0)</a>
       </div>
     </nav>
 
-    <h1>Bienvenidos a Lucas Store</h1>
+    <!-- Banner Principal -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>Panadería Artesanal</h1>
+        <p>Pan fresco hecho con amor y dedicación cada día</p>
+        <a href="#productos" class="btn-primary">Ver Productos</a>
+      </div>
+    </section>
 
-    <div class="categorias">
-      <div class="panes con manteca">Ropa</div>
-      <div class="panes con grasa">Accesorios</div>
-      <div class="panes con lacteos">Electrónica</div>
-    </div>
+    <!-- Categorías -->
+    <section class="categorias-section">
+      <h2>Nuestras Categorías</h2>
+      <div class="categorias">
+        <div class="categoria">
+          <div class="categoria-icon">🥖</div>
+          <h3>Panes</h3>
+          <p>Variedades frescas diarias</p>
+        </div>
+        <div class="categoria">
+          <div class="categoria-icon">🥐</div>
+          <h3>Facturas</h3>
+          <p>Dulces y saladas</p>
+        </div>
+        <div class="categoria">
+          <div class="categoria-icon">🎂</div>
+          <h3>Tortas</h3>
+          <p>Para toda ocasión</p>
+        </div>
+        <div class="categoria">
+          <div class="categoria-icon">🍪</div>
+          <h3>Galletas</h3>
+          <p>Artesanales y caseras</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="productos-section" id="productos">
+      <h2>Productos Destacados</h2>
+      <div class="productos-grid">
+        <div class="producto-card">
+          <img
+            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400"
+            alt="Baguette"
+          />
+          <h3>Baguette Tradicional</h3>
+          <p class="descripcion">
+            Pan francés crujiente por fuera, suave por dentro
+          </p>
+          <p class="precio">$850</p>
+          <button class="btn-agregar">Agregar al Carrito</button>
+        </div>
+
+        <div class="producto-card">
+          <img
+            src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400"
+            alt="Croissant"
+          />
+          <h3>Croissants de Manteca</h3>
+          <p class="descripcion">Hojaldre artesanal con manteca pura</p>
+          <p class="precio">$650</p>
+          <button class="btn-agregar">Agregar al Carrito</button>
+        </div>
+
+        <div class="producto-card">
+          <img
+            src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400"
+            alt="Pan Integral"
+          />
+          <h3>Pan Integral con Semillas</h3>
+          <p class="descripcion">Saludable y nutritivo con mix de semillas</p>
+          <p class="precio">$950</p>
+          <button class="btn-agregar">Agregar al Carrito</button>
+        </div>
+
+        <div class="producto-card">
+          <img
+            src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=400"
+            alt="Medialunas"
+          />
+          <h3>Medialunas Dulces</h3>
+          <p class="descripcion">Docena de medialunas con almíbar</p>
+          <p class="precio">$1.200</p>
+          <button class="btn-agregar">Agregar al Carrito</button>
+        </div>
+
+        <div class="producto-card">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400"
+            alt="Torta"
+          />
+          <h3>Torta de Chocolate</h3>
+          <p class="descripcion">
+            Torta casera húmeda con cobertura de chocolate
+          </p>
+          <p class="precio">$4.500</p>
+          <button class="btn-agregar">Agregar al Carrito</button>
+        </div>
+
+        <div class="producto-card">
+          <img
+            src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400"
+            alt="Galletas"
+          />
+          <h3>Galletas de Chocolate</h3>
+          <p class="descripcion">Caja con 12 galletas con chips de chocolate</p>
+          <p class="precio">$1.800</p>
+          <button class="btn-agregar">Agregar al Carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="nosotros-section" id="nosotros">
+      <div class="nosotros-content">
+        <div class="nosotros-texto">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            Desde 1985, El Artesano ha sido sinónimo de calidad y tradición en
+            panadería artesanal. Cada producto es elaborado con ingredientes
+            seleccionados y el cariño de nuestros maestros panaderos.
+          </p>
+          <p>
+            Nos enorgullece mantener las recetas tradicionales mientras
+            innovamos con nuevos sabores para satisfacer a nuestros clientes.
+          </p>
+          <ul class="ventajas">
+            <li>✓ Pan fresco todos los días</li>
+            <li>✓ Ingredientes naturales</li>
+            <li>✓ Recetas tradicionales</li>
+            <li>✓ Atención personalizada</li>
+          </ul>
+        </div>
+        <div class="nosotros-imagen">
+          <img
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500"
+            alt="Panadero trabajando"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contacto-section" id="contacto">
+      <h2>Contacto</h2>
+      <div class="contacto-content">
+        <div class="contacto-info">
+          <h3>📍 Dirección</h3>
+          <p>Esquina Oscar Orias y 9 de julio<br />Salta, Argentina</p>
+
+          <h3>📞 Teléfono</h3>
+          <p>(2901) 4567-8900</p>
+
+          <h3>🕐 Horarios</h3>
+          <p>Lunes a Sábado: 6:00 - 20:00<br />Domingos: 8:00 - 13:00</p>
+        </div>
+        <div class="contacto-form">
+          <h3>Envíanos un mensaje</h3>
+          <form>
+            <input type="text" placeholder="Nombre completo" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>El Artesano</h4>
+          <p>Panadería artesanal con más de 15 años de tradición</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces</h4>
+          <a href="#inicio">Inicio</a>
+          <a href="#productos">Productos</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 El Artesano. Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </body>
 </html>
